@@ -1,32 +1,32 @@
-import addDom from "../../../domTools/addDomObject.js";
+import { addDomObject } from "../utils/domTools.js";
 
 export default function (game, spriteList) 
 {
     let panel = {
-        xPosInput: addDom(game, "input", 0, 340,`
+        xPosInput: addDomObject(game, "input", 0, 340,`
         background-color: white; 
         width: 50px; 
         height: 30px; 
         font-size: 15px`,
         ""),
-        yPosInput: addDom(game, "input", 70, 340,`
+        yPosInput: addDomObject(game, "input", 70, 340,`
         background-color: white; 
         width: 50px; 
         height: 30px; 
         font-size: 15px`,
         ""),
-        nameInput: addDom(game, "input", 150, 340,`
+        nameInput: addDomObject(game, "input", 150, 340,`
         background-color: white; 
         width: 70px; 
         height: 30px; 
         font-size: 15px`,
         ""),
-        hintMsg: addDom(game, "div", 110, 300,`
+        hintMsg: addDomObject(game, "div", 110, 300,`
 
         font-size: 15px`,
         "")
     }
-    panel.addSpriteButton = addDom(game, "button", 0, 300,`
+    panel.addSpriteButton = addDomObject(game, "button", 0, 300,`
     background-color: cyan; 
     width: 100px; 
     height: 30px; 

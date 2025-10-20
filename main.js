@@ -14,8 +14,8 @@ var config = {
     ]
   };
 
-import GameStage from "./scenes/GameStage/GameStage.js";
-import StartScene from "./scenes/StartScene/StartScene.js";
+import GameStage from "./src/scenes/GameStage.js";
+import StartScene from "/src/scenes/StartScene.js";
 import Lab from "./scenes/Lab/Lab.js";
 
 document.game = new Phaser.Game(config);
